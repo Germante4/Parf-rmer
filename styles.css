@@ -327,3 +327,110 @@ h3{
   .gallery__item img{ height: 320px; }
   .card__media img{ height: 260px; }
 }
+/* --- Pricing --- */
+.prices{
+  display:grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 16px;
+  align-items: stretch;
+}
+@media (max-width: 980px){
+  .prices{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 560px){
+  .prices{ grid-template-columns: 1fr; }
+}
+
+.priceCard{
+  position: relative;
+  border-radius: 18px;
+  padding: 18px 16px;
+  background: rgba(255,255,255,.75);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(0,0,0,.08);
+  box-shadow: 0 10px 28px rgba(0,0,0,.06);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.priceCard:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 16px 38px rgba(0,0,0,.10);
+}
+.priceCard__top{
+  display:flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+}
+.priceCard__price{
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: .2px;
+}
+.priceCard__hint{
+  margin: 8px 0 0;
+  opacity: .75;
+  font-size: 14px;
+}
+
+.priceCard--featured{
+  background: rgba(255,255,255,.92);
+  border-color: rgba(0,0,0,.12);
+}
+.priceCard__badge{
+  position:absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,.14);
+  background: rgba(255,255,255,.9);
+}
+
+.priceRow{
+  margin-top: 18px;
+  padding: 18px;
+  border-radius: 18px;
+  border: 1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.6);
+  backdrop-filter: blur(8px);
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  gap: 14px;
+}
+@media (max-width: 760px){
+  .priceRow{ flex-direction: column; align-items: flex-start; }
+  .priceRow__right{ width:100%; display:flex; gap:10px; flex-wrap: wrap; }
+}
+
+.fineprint{
+  margin-top: 10px;
+  font-size: 14px;
+  opacity: .75;
+}
+
+/* --- Form note --- */
+.formNote{
+  margin-top: 12px;
+  padding: 14px 14px;
+  border-radius: 16px;
+  border: 1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.7);
+}
+.formNote p{ margin: 0 0 8px; }
+
+/* --- Links --- */
+.link{
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+}
+.link:hover{
+  opacity: .8;
+}
+
+/* Optional: IG button slight emphasis (keičia tik „jausmą“, ne spalvą) */
+.btn--ig{
+  letter-spacing: .2px;
+}

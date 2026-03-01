@@ -21,8 +21,8 @@
 
             <nav class="nav" aria-label="Pagrindinis meniu">
                 <a href="#paslaugos">Treniruotės</a>
+                <a href="#kainos">Kainos</a>
                 <a href="#galerija">Galerija</a>
-                <!-- <a href="#registracija">Registracija</a> -->
                 <a href="#kontaktai">Kontaktai</a>
             </nav>
 
@@ -47,6 +47,7 @@
                 <div class="hero__actions">
                     <a class="btn btn--primary" href="#registracija">Registruotis dabar</a>
                     <a class="btn btn--ghost" href="#paslaugos">Peržiūrėti treniruotes</a>
+                    <a class="btn btn--ghost" href="#kainos">Peržiūrėti kainas</a>
                 </div>
 
                 <div class="chips" aria-label="Svarbiausia informacija">
@@ -110,6 +111,79 @@
                 </div>
             </div>
         </section>
+        <!-- Pricing -->
+        <section class="section section--alt" id="kainos">
+            <div class="container">
+                <div class="section__head">
+                    <h2>Kainos</h2>
+                    <p class="section__desc">Pasirink planą, kuris patogiausias. Abonementai skirti grupinėms reformer
+                        treniruotėms.</p>
+                </div>
+
+                <div class="prices">
+                    <div class="priceCard">
+                        <div class="priceCard__top">
+                            <h3>1 treniruotė</h3>
+                            <p class="priceCard__price">20€</p>
+                        </div>
+                        <p class="priceCard__hint">Vienkartinis apsilankymas</p>
+                    </div>
+
+                    <div class="priceCard">
+                        <div class="priceCard__top">
+                            <h3>4 treniruotės</h3>
+                            <p class="priceCard__price">75€</p>
+                        </div>
+                        <p class="priceCard__hint">Patogu pradžiai</p>
+                    </div>
+
+                    <div class="priceCard">
+                        <div class="priceCard__top">
+                            <h3>6 treniruotės</h3>
+                            <p class="priceCard__price">105€</p>
+                        </div>
+                        <p class="priceCard__hint">Balansas tarp kainos ir dažnio</p>
+                    </div>
+
+                    <div class="priceCard">
+                        <div class="priceCard__top">
+                            <h3>8 treniruotės</h3>
+                            <p class="priceCard__price">135€</p>
+                        </div>
+                        <p class="priceCard__hint">Reguliariam lankymui</p>
+                    </div>
+
+                    <div class="priceCard priceCard--featured">
+                        <div class="priceCard__badge">Populiariausia</div>
+                        <div class="priceCard__top">
+                            <h3>10 treniruočių</h3>
+                            <p class="priceCard__price">160€</p>
+                        </div>
+                        <p class="priceCard__hint">Geriausia vertė dažniau sportuojant</p>
+                    </div>
+                </div>
+
+                <div class="priceRow">
+                    <div class="priceRow__left">
+                        <h3>Individuali treniruotė</h3>
+                        <p class="muted">Kaina: <strong>50€</strong></p>
+                        <p class="muted">Norint individualiai – parašyk Instagram žinutę.</p>
+                    </div>
+
+                    <div class="priceRow__right">
+                        <a class="btn btn--primary btn--ig" href="https://www.instagram.com/parformer.studio/"
+                            target="_blank" rel="noopener noreferrer">
+                            Parašyti į Instagram
+                        </a>
+                        <a class="btn btn--ghost" href="#registracija">Registruotis į grupę</a>
+                    </div>
+                </div>
+
+                <p class="fineprint">
+                    Renginiams, kolektyvams ir edukacijai kainos derinamos asmeniškai.
+                </p>
+            </div>
+        </section>
 
         <!-- Gallery -->
         <section class="section section--alt" id="galerija">
@@ -165,12 +239,19 @@
                     </div>
 
                     <div class="formWrap" id="forma" aria-label="Registracijos forma">
-                        <<iframe src="https://forms.gle/wxbHNsAVqcg7EbDS7" width="640" height="693" frameborder="0"
-                            marginheight="0" marginwidth="0">Įkeliama…</iframe>
-                            <!-- <div class="formPlaceholder">
-                                <p><strong></strong></p>
-                                <p></p>
-                            </div> -->
+                        <iframe src="https://forms.gle/wxbHNsAVqcg7EbDS7" title="Registracijos forma" loading="lazy"
+                            frameborder="0" marginheight="0" marginwidth="0">
+                            Įkeliama…
+                        </iframe>
+
+                        <div class="formNote">
+                            <p><strong>Asmeninė treniruotė?</strong> Parašyk man per Instagram – suderinsim laiką ir
+                                planą.</p>
+                            <a class="link" href="https://www.instagram.com/parformer.studio/" target="_blank"
+                                rel="noopener noreferrer">
+                                @parformer.studio →
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -191,11 +272,16 @@
                     </div>
                     <div class="info">
                         <h3>Telefonas</h3>
-                        <p><a href="tel:+37000000000">+370 63607217</a></p>
+                        <p><a href="tel:+37063607217">+370 636 07217</a></p>
                     </div>
                     <div class="info">
                         <h3>Instagram</h3>
-                        <p><a href="#" rel="noopener">https://www.instagram.com/parformer.studio/</a></p>
+                        <p>
+                            <a class="link" href="https://www.instagram.com/parformer.studio/" target="_blank"
+                                rel="noopener noreferrer">
+                                @parformer.studio
+                            </a>
+                        </p>
                     </div>
                 </div>
 
