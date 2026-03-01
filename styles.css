@@ -341,7 +341,7 @@ h3{
 /* kad dideliame ekrane neatrodytų per daug “išsiplėtę” */
 @media (min-width: 1200px){
   .prices{
-    grid-template-columns: repeat(4, minmax(240px, 1fr));
+    grid-template-columns: repeat(3, minmax(240px, 1fr));
   }
 }
 
