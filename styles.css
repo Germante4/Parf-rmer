@@ -328,15 +328,29 @@ h3{
   .card__media img{ height: 260px; }
 }
 /* --- Pricing --- */
+/* --- Pricing (fixed desktop layout) --- */
 .prices{
-  display:grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  display: grid;
   gap: 16px;
   align-items: stretch;
+
+  /* Vietoj 5 prievartinių stulpelių – automatinis išdėstymas pagal plotį */
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
+
+/* kad dideliame ekrane neatrodytų per daug “išsiplėtę” */
+@media (min-width: 1200px){
+  .prices{
+    grid-template-columns: repeat(4, minmax(240px, 1fr));
+  }
+}
+
+/* Tablet */
 @media (max-width: 980px){
   .prices{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
+
+/* Phone */
 @media (max-width: 560px){
   .prices{ grid-template-columns: 1fr; }
 }
